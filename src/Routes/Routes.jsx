@@ -3,6 +3,7 @@ import Root from "../Layout/Root/Root";
 import Home from "../Pages/Home/Home";
 import ListedBooks from "../Pages/ListedBooks/ListedBooks";
 import PagesToRead from "../Pages/PagesToRead/PagesToRead";
+import BookDetails from "../Pages/BookDetails/BookDetails";
 
 export const router = createBrowserRouter([
     {
@@ -11,7 +12,7 @@ export const router = createBrowserRouter([
       children:[
         {
             path:'/',
-            element:<Home></Home>
+            element:<Home></Home>,
         },
         {
             path:'/listedbooks',
@@ -20,6 +21,11 @@ export const router = createBrowserRouter([
         {
             path:'/pagestoread',
             element:<PagesToRead></PagesToRead>
+        },
+        {
+            path:'/booksdetails/:id',
+            element:<BookDetails></BookDetails>,
+            loader: async () => await fetch('/books.json')
         }
     ]
     }
