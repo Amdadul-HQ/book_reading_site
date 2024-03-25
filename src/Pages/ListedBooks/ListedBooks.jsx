@@ -1,21 +1,6 @@
-import { Link, NavLink, Outlet, useLoaderData } from "react-router-dom";
-import { getLocalStorage } from "../../utility/SetToLocalStorage";
-import { useEffect, useState } from "react";
-import ReadList from "../../Component/ReadList/ReadList";
+import { NavLink, Outlet } from "react-router-dom";
 
 const ListedBooks = () => {
-    // const books = useLoaderData()
-    // const readList = getLocalStorage()
-    // // console.log(readList);
-    // const showReadList = books.filter( book => readList.includes(book.bookId))
-    
-    // console.log(showReadList);
-    // useEffect(() => {
-        
-    //     const showRead
-    // },[])
-
-
 
     return (
         <div className="font-work">
