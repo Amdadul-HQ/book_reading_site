@@ -12,7 +12,7 @@ const Book = ({book}) => {
            <div className="space-y-4">
                 <div className="flex gap-x-3">
                 {
-                    tags.map( tag => <p className="text-[#23BE0A] text-base font-medium px-4 py-2 rounded-[30px] bg-[rgba(35,190,10,0.05)]" key={bookId}>{tag}</p> )
+                    tags.map( tag => <p className="text-[#23BE0A] text-base font-medium px-4 py-2 rounded-[30px] bg-[rgba(35,190,10,0.05)]" key={bookId}>#{tag}</p> )
                 }
                 </div>
                 <h1 className="font-playfair text-[#131313] text-2xl font-bold">{bookName}</h1>
@@ -28,3 +28,4 @@ const Book = ({book}) => {
 };
 
 export default Book;
+
