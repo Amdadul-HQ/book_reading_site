@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid } from 'recharts';
+import { BarChart,ResponsiveContainer, Bar, Cell, XAxis, YAxis, CartesianGrid } from 'recharts';
 import { getLocalStorage } from '../../utility/SetToLocalStorage';
 import { useLoaderData } from 'react-router-dom';
 
@@ -26,7 +26,8 @@ const PagesToRead = () => {
     
     return (
         <div className='w-full h-96'>
-      <BarChart
+          <ResponsiveContainer>
+          <BarChart
       width={1000}
       height={600}
       data={showReadBook}
@@ -46,6 +47,7 @@ const PagesToRead = () => {
         ))}
       </Bar>
     </BarChart>
+          </ResponsiveContainer>
         </div>
     );
 };

@@ -1,0 +1,32 @@
+[
+    {
+      "type": "Free",
+      "price": "$0",
+      "features": [
+        "Basic profile creation",
+        "Limited access to content",
+        "Access to community forums",
+        "Receive newsletters"
+      ],
+      "facilities": [
+        "Access to a certain number of articles per month",
+        "Limited storage space for uploaded content",
+        "No ad-free experience"
+      ]
+    },
+    {
+      "type": "Pro",
+      "price": "$9.99/month",
+      "features": [
+        "Full access to all content",
+        "Advanced profile customization",
+        "Priority customer support",
+        "Ad-free experience"
+      ],
+      "facilities": [
+        "Unlimited access to all articles and resources",
+        "Expanded storage space for uploaded content",
+        "Exclusive access to premium features"
+      ]
+    }
+  ]
