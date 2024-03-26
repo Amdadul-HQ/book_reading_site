@@ -11,4 +11,5 @@ Web Site Feature:
  * Full Mobile Responsive
  * Have a Contract Form
  * A Grap Chart With Custom Shape
- * Have A Error Page 
+ * Successful Toastify Massege
+ * Not Found Page
