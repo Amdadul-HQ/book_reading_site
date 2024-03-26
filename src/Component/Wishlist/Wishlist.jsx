@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import  { useEffect, useState } from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
 import { getWishListedId } from '../../utility/SetToLocalStorage';
 import Whitels from '../Whitels/Whitels';

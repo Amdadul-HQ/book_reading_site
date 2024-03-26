@@ -1,4 +1,3 @@
-import React, { PureComponent } from 'react';
 import { BarChart,ResponsiveContainer, Bar, Cell, XAxis, YAxis, CartesianGrid } from 'recharts';
 import { getLocalStorage } from '../../utility/SetToLocalStorage';
 import { useLoaderData } from 'react-router-dom';
@@ -51,5 +50,7 @@ const PagesToRead = () => {
         </div>
     );
 };
+
+
 
 export default PagesToRead;

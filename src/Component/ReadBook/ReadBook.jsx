@@ -2,6 +2,10 @@ import { SlLocationPin } from "react-icons/sl";
 import { HiOutlineUsers } from "react-icons/hi";
 import { HiOutlineNewspaper } from "react-icons/hi2";
 import { Link } from "react-router-dom";
+import PropTypes from 'prop-types';
+
+
+
 const ReadBook = ({book}) => {
     const {bookId,image,bookName,author,tags,yearOfPublishing,publisher,totalPages,category,rating} = book
     return (
@@ -32,6 +36,10 @@ const ReadBook = ({book}) => {
         </div>
     );
 };
+
+ReadBook.propTypes = {
+    book:PropTypes.object
+}
 
 export default ReadBook;
 

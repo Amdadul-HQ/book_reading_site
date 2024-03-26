@@ -1,6 +1,7 @@
 import { IoIosStarOutline } from "react-icons/io";
 import '../../assets/font.css'
 import { Link } from "react-router-dom";
+import PropTypes from 'prop-types';
 
 const Book = ({book}) => {
     const {image,tags,bookId,bookName,author,category,rating} = book;
@@ -26,6 +27,12 @@ const Book = ({book}) => {
         </Link>
     );
 };
+
+Book.propTypes = {
+    book:PropTypes.object
+}
+
+
 
 export default Book;
 

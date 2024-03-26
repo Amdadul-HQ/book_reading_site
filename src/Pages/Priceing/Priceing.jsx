@@ -45,7 +45,7 @@ const Priceing = () => {
                     <p className="flex gap-x-2 items-center text-lg text-[rgba(19,19,19,0.80)] font-semibold"><FaCircleCheck className="text-[#23BE0A]"></FaCircleCheck>Expanded storage space for uploaded content</p>
                     </div>
                     <div>
-                        <button className="w-full bg-[#23BE0A] py-5 rounded-2xl text-lg font-medium text-white">Chose Basic</button>
+                        <button className="w-full bg-[#23BE0A] py-5 rounded-2xl text-lg font-medium text-white">Chose Pro</button>
                     </div>
                 </div>
             </div>
