@@ -22,7 +22,6 @@ export const router = createBrowserRouter([
             children:[
                 {
                     index:true,
-                    path:'readlist',
                     element:<ReadList></ReadList>,
                     loader: async() => await fetch('/books.json'),
                 },
@@ -35,7 +34,8 @@ export const router = createBrowserRouter([
         },
         {
             path:'/pagestoread',
-            element:<PagesToRead></PagesToRead>
+            element:<PagesToRead></PagesToRead>,
+            loader: async () => await fetch('/books.json')
         },
         {
             path:'/booksdetails/:id',
