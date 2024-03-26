@@ -7,8 +7,8 @@ import BookDetails from "../Pages/BookDetails/BookDetails";
 import ReadList from "../Component/ReadList/ReadList";
 import Wishlist from "../Component/Wishlist/Wishlist";
 import Error from "../Pages/Error/Error";
-import ComingBook from "../Pages/ComingBook/ComingBook";
 import About from "../Pages/About/About";
+import Priceing from "../Pages/Priceing/Priceing";
 
 export const router = createBrowserRouter([
     {
@@ -47,8 +47,8 @@ export const router = createBrowserRouter([
             loader: async () => await fetch('/books.json')
         },
         {
-            path:'/coming',
-            element:<ComingBook></ComingBook>
+            path:'/priceing',
+            element:<Priceing></Priceing>
         },
         {
             path:'/about',
