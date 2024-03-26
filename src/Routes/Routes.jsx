@@ -7,8 +7,8 @@ import BookDetails from "../Pages/BookDetails/BookDetails";
 import ReadList from "../Component/ReadList/ReadList";
 import Wishlist from "../Component/Wishlist/Wishlist";
 import Error from "../Pages/Error/Error";
-import About from "../Pages/About/About";
 import Priceing from "../Pages/Priceing/Priceing";
+import Contract from "../Pages/Contract/Contract";
 
 export const router = createBrowserRouter([
     {
@@ -51,8 +51,8 @@ export const router = createBrowserRouter([
             element:<Priceing></Priceing>
         },
         {
-            path:'/about',
-            element:<About></About>
+            path:'/contract',
+            element:<Contract></Contract>
         }
     ]
     }
