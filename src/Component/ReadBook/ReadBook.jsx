@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const ReadBook = ({book}) => {
     const {bookId,image,bookName,author,tags,yearOfPublishing,publisher,totalPages,category,rating} = book
     return (
-        <div className="flex md:flex-row flex-col gap-x-6 p-6 rounded-2xl border md:px-0 px-5">
+        <div className="flex md:flex-row flex-col gap-x-6 p-6 rounded-2xl border">
             <div className="bg-[rgba(19,19,19,0.05)] flex justify-center items-center md:w-[230px] h-[230px] rounded-xl">
                 <img src={image} alt="" />
             </div>

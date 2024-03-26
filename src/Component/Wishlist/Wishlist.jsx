@@ -37,7 +37,7 @@ const Wishlist = () => {
     },[])
     
     return (
-        <div className="space-y-6">
+        <div className="space-y-6 max-w-screen-xl mx-auto">
               <div className="flex justify-center my-5">
 			<details className="dropdown">
 			<summary className="m-1 btn bg-[#23BE0A] text-lg font-semibold text-white hover:text-[#131313] mx-auto">Sort By</summary>
