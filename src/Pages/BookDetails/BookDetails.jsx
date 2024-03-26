@@ -20,7 +20,7 @@ const BookDetails = () => {
             if(saveId){
                 const allReadyExist = saveId.find( Id => Id == id)
                 if(allReadyExist){
-                    return toast.error('You All Ready Read This Book')
+                    return toast.error('You Already Read This Book')
                 }
             }
             addToLocalStorageWishListed(id)
