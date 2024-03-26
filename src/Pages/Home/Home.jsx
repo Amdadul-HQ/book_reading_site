@@ -3,7 +3,7 @@ import Books from "../../Component/Books/Books";
 
 const Home = () => {
     return (
-        <section>
+        <section className="md:px-0 px-5">
             <Banner></Banner>
             <Books></Books>
         </section>

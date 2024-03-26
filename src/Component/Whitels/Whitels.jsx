@@ -7,22 +7,22 @@ import { Link } from "react-router-dom";
 const Whitels = ({book}) => {
     const {bookId,image,bookName,author,tags,yearOfPublishing,publisher,totalPages,category,rating} = book
     return (
-        <div className="flex gap-x-6 p-6 rounded-2xl border">
-            <div className="bg-[rgba(19,19,19,0.05)] flex justify-center items-center w-[230px] h-[230px] rounded-xl">
+        <div className="flex md:flex-row flex-col gap-x-6 p-6 rounded-2xl border md:px-0 px-5">
+            <div className="bg-[rgba(19,19,19,0.05)] flex justify-center items-center md:w-[230px] h-[230px] rounded-xl">
                 <img src={image} alt="" />
             </div>
             <div className="flex-grow flex flex-col justify-around">
                 <h1 className="font-playfair text-2xl text-[#131313] font-bold">{bookName}</h1>
                 <p className="text-[rgba(19,19,19,0.80)] text-base font-medium">By :{author}</p>
-                <div className="flex gap-x-3">
+                <div className="flex md:flex-row flex-col md:gap-y-0 gap-y-4 gap-x-3">
                     {
                         tags.map( (tag,index) => <p className="text-[#23BE0A] text-base font-medium px-4 py-2 rounded-[30px] bg-[rgba(35,190,10,0.05)]" key={index}>#{tag}</p> )
                     }
                     <p className="flex items-center gap-x-2 text-[rgba(19,19,19,0.80)]"><SlLocationPin></SlLocationPin> Year of Publishing : {yearOfPublishing}</p>
                 </div>
-                    <div className="flex items-center gap-x-5">
-                        <p className="flex gap-x-2 text-[rgba(19,19,19,0.60)] text-base font-normal"><HiOutlineUsers></HiOutlineUsers>Publisher: {publisher}</p>
-                        <p className="flex gap-x-2 text-[rgba(19,19,19,0.60)] text-base font-normal"><HiOutlineNewspaper></HiOutlineNewspaper> Page: {totalPages}</p>
+                    <div className="flex md:flex-row flex-col gap-y-3 md:mt-0 mt-4 md:items-center md:gap-x-5">
+                        <p className="flex md:gap-x-2 text-[rgba(19,19,19,0.60)] text-base font-normal"><HiOutlineUsers></HiOutlineUsers>Publisher: {publisher}</p>
+                        <p className="flex md:gap-x-2 text-[rgba(19,19,19,0.60)] text-base font-normal"><HiOutlineNewspaper></HiOutlineNewspaper> Page: {totalPages}</p>
                     </div>
                     <hr className="my-5"/>
                     <div className="flex gap-x-3">

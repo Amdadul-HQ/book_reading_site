@@ -27,11 +27,11 @@ const BookDetails = () => {
     }
 
     return (
-        <section className='flex justify-between  gap-x-12 font-work'>
-            <div className='w-[50%] bg-[rgba(19,19,19,0.05)] rounded-2xl p-[72px] flex justify-center items-center'>
+        <section className='flex md:flex-row flex-col justify-between md:px-0 md:my-0 my-11 px-5 gap-x-12 font-work'>
+            <div className='md:w-[50%]  bg-[rgba(19,19,19,0.05)] rounded-2xl p-[72px] flex justify-center items-center'>
                 <img className='h-[560px] object-contain' src={image} alt="" />
             </div>
-            <div className='w-[48%] space-y-4'>
+            <div className='md:w-[48%] space-y-4 md:mt-0 mt-5'>
                 <h1 className='text-[#131313] text-4xl font-bold font-playfair'>{bookName}</h1>
                 <hr />
                 <p className='text-[rgba(19,19,19,0.80)] text-xl font-medium'>By : {author}</p>
@@ -44,7 +44,7 @@ const BookDetails = () => {
                     }
                 </div>
                 <hr />
-                <div className='text-left w-[60%] space-y-4'>
+                <div className='text-left md:w-[60%] space-y-4'>
                 <p className='flex justify-between text-base text-[rgba(19,19,19,0.70)] font-normal'>Number of  Pages : <span className='text-base font-semibold text-[#131313]'>{totalPages}</span></p>
                 <p className='flex justify-between text-base text-[rgba(19,19,19,0.70)] font-normal'>Publisher : <span className='text-base font-semibold text-[#131313]'>{publisher}</span></p>
                 <p className='flex justify-between text-base text-[rgba(19,19,19,0.70)] font-normal'>Year Of Publishing : <span className='text-base font-semibold text-[#131313]'>{yearOfPublishing}</span></p>
