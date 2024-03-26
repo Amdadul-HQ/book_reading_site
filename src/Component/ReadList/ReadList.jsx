@@ -44,10 +44,10 @@ const ReadList = () => {
 			<details className="dropdown">
 			<summary className="m-1 btn bg-[#23BE0A] text-lg font-semibold text-white hover:text-[#131313] mx-auto">Sort By</summary>
 			<ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
-				<Link to='' onClick={() => handlefilter('sortby')}><a>Sort By</a></Link>
-				<Link to='' onClick={() => handlefilter('rating')}><a>Rating</a></Link>
-				<Link to='' onClick={() => handlefilter('pages')}><a>Number Of Pages</a></Link>
-				<Link to='' onClick={() => handlefilter('publish')}><a>Published Year</a></Link>
+				<Link to='' className="text-base font-medium py-2 rounded-md hover:bg-[#23BE0A] text-center" onClick={() => handlefilter('sortby')}><a>Sort By</a></Link>
+				<Link to='' className="text-base font-medium py-2 rounded-md hover:bg-[#23BE0A] text-center" onClick={() => handlefilter('rating')}><a>Rating</a></Link>
+				<Link to='' className="text-base font-medium py-2 rounded-md hover:bg-[#23BE0A] text-center" onClick={() => handlefilter('pages')}><a>Number Of Pages</a></Link>
+				<Link to='' className="text-base font-medium py-2 rounded-md hover:bg-[#23BE0A] text-center" onClick={() => handlefilter('publish')}><a>Published Year</a></Link>
 			</ul>
 			</details>
 			</div>
